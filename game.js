@@ -10,10 +10,10 @@ class WhackAFriend {
         
         // 朋友头像数组（替换为实际的图片URL）
         this.friendImages = [
-            'images/孙.jpg',
-            'images/王.png',
-            'images/吕.png',
-            'images/林.png'
+            '孙.jpg',
+            '王.png',
+            '吕.png',
+            '林.png'
         ];
         
         this.highScores = JSON.parse(localStorage.getItem('whackAFriendScores')) || [];
