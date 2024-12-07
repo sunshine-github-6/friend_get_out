@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打朋友游戏</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <div class="instructions">
+                <h2>打地鼠大作战</h2>
+                <p>游戏说明：打中普通朋友 +10 分，打中 BOSS -20 分！</p>
+            </div>
+            <div class="boss-preview">
+                <p>当前 BOSS：</p>
+                <div class="boss-avatar">
+                    <img id="bossImage" src="" alt="BOSS" style="display: none;">
+                    <span id="currentBoss">未开始</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-info">
+            <div class="score-board">
+                <span>得分：</span>
+                <span id="score">0</span>
+            </div>
+            <div class="time-board">
+                <span>剩余时间：</span>
+                <span id="time">30</span>
+                <span>秒</span>
+            </div>
+        </div>
+        
+        <div class="game-board">
+            <div class="hole"><div class="friend"></div></div>
+            <div class="hole"><div class="friend"></div></div>
+            <div class="hole"><div class="friend"></div></div>
+            <div class="hole"><div class="friend"></div></div>
+            <div class="hole"><div class="friend"></div></div>
+            <div class="hole"><div class="friend"></div></div>
+            <div class="hole"><div class="friend"></div></div>
+            <div class="hole"><div class="friend"></div></div>
+            <div class="hole"><div class="friend"></div></div>
+        </div>
+        <button id="startGame" class="start-button">开始游戏</button>
+        
+        <div class="high-scores">
+            <h3>历史最高分</h3>
+            <ol id="highScoresList"></ol>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
